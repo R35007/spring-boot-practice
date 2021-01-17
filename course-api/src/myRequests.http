@@ -1,0 +1,23 @@
+http://localhost:8080/topics
+###
+http://localhost:8080/topics/3
+###
+POST http://localhost:8080/topics
+content-type: application/json
+
+{
+  "id":"5",
+  "name":"Vue",
+  "description":"Vue description"
+}
+###
+PUT http://localhost:8080/topics/1
+content-type: application/json
+
+{
+  "id":"1",
+  "name":"React",
+  "description":"React description"
+}
+###
+DELETE http://localhost:8080/topics/5
